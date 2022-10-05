@@ -1,0 +1,364 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+:root{
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+/* ------------------------------- */
+--Bright-Blue: hsl(224, 93%, 58%);
+--Moderate-Cyan: hsl(170, 45%, 43%);
+/* ------------------------------- */
+--Light-Grayish-Blue: hsl(240, 75%, 98%);
+--Light-Gray: hsl(0, 0%, 75%);
+}
+
+h1{
+font-size: 35pt;
+font-family: "Raleway";
+font-weight: 700;
+color: var(--Very-Dark-Blue);
+}
+p{
+font-family: "Open Sans";
+font-weight: 500;
+font-size: 15pt;
+color:var(--Very-Dark-Blue);
+line-height: 1.8;
+}
+header{
+margin: 50px 100px ;
+display: flex;
+align-items: center;
+}
+nav{
+position: absolute;
+right:30px;
+}
+nav a{
+font-family: Raleway;
+font-weight: 400;
+margin-right: 80px;
+text-decoration: none;
+color:var(--Very-Dark-Blue);
+font-size:17pt;
+}
+
+.right{
+width: 750px;
+height: 700px;
+}
+content{
+position: relative;
+top:50px;
+height: 100%;
+}
+.upper-section{
+margin: 0 50px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.upper-section .left h1,p{
+margin-bottom: 40px;
+}
+.upper-section .left .input button:hover{
+background-color:hsl(224, 100%, 70%);
+border-color:hsl(224, 100%, 70%) ;
+}
+
+.left{
+width: 760px;
+word-wrap: break-word;
+font-size: 20pt;
+}
+.curve-bg{
+  background-image: url("../images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 600vw 320vh;
+  background-position: -250vw 800px;
+  height: 1900px;
+}
+.lower-section{
+margin: 0 50px;
+margin-top: 300px;
+display: flex;
+justify-content: space-around;
+}
+.icon-arrow{
+width: 20px;
+height: 20px;
+margin-left: 5px;
+}
+.lower-section .left a:hover{
+color:hsl(170, 59%, 57%);
+border-bottom-color: hsl(170, 59%, 57%);
+}
+.lower-section .left a,img{
+display: flex;
+align-items: center;
+
+}
+.lower-section .left a{
+font-size: 15pt;
+color:var(--Moderate-Cyan);
+text-decoration: none;
+border: 2px solid var(--Moderate-Cyan);
+border-top: none;
+border-left: none;
+border-right: none;
+width: fit-content;
+font-family: "Open Sans";
+}
+
+footer{
+position: relative;
+}
+.input input{
+border:1px solid var(--Desaturated-Blue);
+border-radius: 5px;
+color:var(--Desaturated-Blue);
+font-family: "Open Sans";
+font-weight: 400;
+font-size: 10pt;
+height: 50px;
+width: 400px;
+padding: 0 20px;
+}
+.input{
+  display: flex;
+}
+.input button{
+margin-left: 20px;
+border-radius: 5px;
+border:1px solid var(--Bright-Blue);
+background-color: var(--Bright-Blue);
+color:var(--Light-Grayish-Blue);
+font-family: "Raleway";
+font-weight: 400;
+width: 250px;
+font-size: 14pt;
+cursor: pointer;
+}
+.left-box{
+box-shadow: 0px 2px 10px var(--Light-Gray);
+border-radius: 10px;
+padding: 40px;
+margin-top:40px ;
+box-sizing: border-box;
+border:1px solid white;
+width: 500px;
+height: 350px;
+background-color: white;
+}
+.profile{
+display: flex;
+}
+.profile img{
+width: 60px ;
+height: 60px;
+border-radius: 50%;
+border:3px solid var(--Moderate-Cyan)
+}
+.profile div{
+margin-left: 10px;
+}
+.avatar-name{
+font-family: "Raleway";
+font-weight: 700;
+margin: 0;
+text-indent: 3px;
+letter-spacing: 2px;
+}
+.status{
+margin-top:5px;
+font-size: 12pt;
+}
+.quotes-icon{
+margin: 5px 0 10px 0;
+width: 20px;
+height: 20px;
+}
+.upper-footer{
+position: relative;
+top: 20px;
+height: 400px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color:var(--Desaturated-Blue);
+}
+.upper-footer div h2{
+font-size: 30pt;
+font-family: "Raleway";
+font-weight:600 ;
+color:var(--Light-Grayish-Blue);
+}
+.upper-footer div{
+margin: 0 100px ;
+}
+.upper-footer .text{
+width: 630px;
+}
+.upper-footer .text p{
+margin-top: 20px;
+  color:var(--Light-Grayish-Blue);
+  opacity: 0.9;
+}
+.lower-input{
+display: flex;
+flex-direction: column;
+}
+.lower-input input{
+box-shadow: 2px 2px 5px -1px rgb(62, 62, 62);
+margin-bottom: 20px;
+width: 550px;
+height: 50px;
+border-radius: 3px;
+border: none;
+padding: 0 20px;
+}
+.lower-input button{
+border-radius: 3px;
+border: none;
+height: 50px;
+width: 250px;
+color: var(--Light-Grayish-Blue);
+background-color: var(--Bright-Blue);
+box-shadow: 3px 3px 5px -2px  rgb(62, 62, 62);
+font-family: "Raleway";
+font-weight: 600;
+cursor: pointer;
+}
+.lower-input button:hover{
+  background-color:hsl(224, 100%, 70%);
+border-color:hsl(224, 100%, 70%) ;
+  
+}
+.bottom-footer{
+color:var(--Light-Grayish-Blue);
+font-weight: 500;
+font-family: "Raleway";
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: var(--Very-Dark-Blue);
+position: relative;
+}
+.lower-logo p{
+color:var(--Light-Grayish-Blue);
+}
+.bottom-footer div{
+margin: 50px ;
+
+}
+ul {
+list-style: none;
+}
+li{
+font-size: 15pt;
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+cursor: pointer;
+transition: 0.2s;
+}
+.middle-list{
+display: flex;
+justify-content: center;
+position: relative;
+top:90px;
+right: 100px;
+display: flex;
+justify-content: center;
+}
+.middle-list div{
+margin: 0 100px;
+}
+.icons{
+position: relative;
+display: flex;
+flex-direction: row;
+right: 100px;
+}
+.icons a{
+transition: 0.3s;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 20px;
+border: 1px solid var(--Light-Grayish-Blue);
+padding: 10px 15px;
+border-radius: 50%;
+color:var(--Light-Grayish-Blue);
+}
+.phone {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.phone img{
+position: relative;
+bottom:20px;
+width: 22px;
+height: 22px;
+margin-right: 20px;
+}
+.email{
+position: relative;
+bottom: 40px;
+display: flex;
+align-items: center;
+}
+.email img{
+  position: relative;
+  bottom:20px;
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+}
+li:hover{
+box-sizing: border-box;
+width: max-content;
+border: 1px solid var(--Light-Gray);
+border-top: none;
+border-left: none;
+border-right: none;
+}
+.icons a:hover{
+background-color: var(--Light-Grayish-Blue);
+color:var(--Very-Dark-Blue);
+}
+.my_signature{
+position: absolute;
+left:5px;
+bottom:10px;
+color:var(--Moderate-Cyan);
+}
